@@ -34,9 +34,13 @@ if (!isProduction) {
 if(isProduction){
   mongoose.connect(process.env.MONGODB_URI);
 } else {
-  mongoose.connect('mongodb://localhost/conduit');
+  //mongoose.connect('mongodb://localhost/conduit');
+  mongoose.connect('mongodb://localhost:27017/api_node')
   mongoose.set('debug', true);
+  console.log('Conexión a la base de datos exitosa');
 }
+
+require('./models/User');
 
 app.use(require('./routes'));
 

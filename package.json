@@ -1,9 +1,11 @@
 {
   "name": "api-node",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Desarrollo de un API con nodeJs",
+  "main": "app.js",
   "scripts": {
+    "start": "node ./app.js",
+    "dev": "nodemon ./app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,8 +13,8 @@
     "url": "git+https://github.com/mundoenrique/api-node.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "mundoenrique",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mundoenrique/api-node/issues"
   },
@@ -36,5 +38,8 @@
     "request": "^2.83.0",
     "slug": "^0.9.1",
     "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.1"
   }
 }
